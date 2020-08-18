@@ -1,9 +1,6 @@
-import React, {Component} from 'react';
-
-import View from './View';
-
-import './App.css';
-
+import React, {Component} from 'react'
+import View from './View'
+import './App.css'
 
 class  App extends Component {
 
@@ -16,7 +13,7 @@ class  App extends Component {
 
   }
   setActiveView = (view) => {
-    this.setState({activeView:view});
+    this.setState({activeView:view})
   }
 
 

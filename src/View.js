@@ -1,20 +1,19 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class  View extends Component {
 
   render(){
 
-    var {className, children, viewName, activeView} = this.props;
+    var {className, children, viewName, activeView} = this.props
+    var newClassName = 'view '+className
+	  return (viewName == activeView) ? (
 
-    var newClassName = (viewName == activeView) ? 'view active '+className : 'view '+className;
-
-    return (
-
-      <div className={newClassName}>
-        {children}
-      </div>
-    );
+              <div className={newClassName}>
+                {children}
+              </div>
+		      	
+		        ) : null
   }
 }
 
-export default View;
+export default View
